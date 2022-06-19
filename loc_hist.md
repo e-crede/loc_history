@@ -101,11 +101,21 @@ git push -u origin main
 	- models: 
 		- user.rb: `has_many :locations`
 		- location.rb: `belongs_to :user`
-- [ ] Manual file upload form
+- [x] Manual file upload form
 ## Backend - File Upload:
+- [x] API end point creation
+	- `rails g controller GpsLogger upload`
+	- change class inheritance to ActionController::API - `class GpsLoggerController < ActionController::API`
+	- [ ] FIXME: namespace to v1: in routes `namespace :api do ...`
+	- [x] API post from gpslogger
+		- [x] save to db
+
 - [ ] User specific credentials must be used to upload file or post message
 - [ ] Upload must be done over encrypted connection
-- [ ] Manual upload view can also be created (carrierwave)
+- [ ] Manual upload view can also be created (carrierwave) -> convert file to individual DB entries
+
+## Mapping
+- [ ] Show GPS Points on Map
 
 # Misc - Ruby Cheat Sheet
 #### Arrays

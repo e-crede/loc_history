@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_18_195541) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_19_143301) do
   create_table "locations", force: :cascade do |t|
     t.string "name"
     t.string "description"
@@ -20,6 +20,31 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_18_195541) do
     t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "lat"
+    t.float "lon"
+    t.string "sat"
+    t.string "desc"
+    t.float "alt"
+    t.float "acc"
+    t.string "dir"
+    t.string "prov"
+    t.string "spd"
+    t.integer "timestamp"
+    t.date "timeoffset"
+    t.date "time"
+    t.integer "starttimestamp"
+    t.date "date"
+    t.string "batt"
+    t.string "ischarging"
+    t.string "aid"
+    t.string "ser"
+    t.string "act"
+    t.string "filename"
+    t.string "profile"
+    t.string "hdop"
+    t.string "vdop"
+    t.string "pdop"
+    t.string "dist"
     t.index ["user_id"], name: "index_locations_on_user_id"
   end
 

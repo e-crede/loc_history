@@ -96,7 +96,7 @@ git push -u origin main
 
 # Features Development
 ## Frontend Scaffold
-- [ ] Scaffolf with fields: user, name, description, duration, gps_coords, gps_file
+- [x] Scaffolf with fields: user, name, description, duration, gps_coords, gps_file
 	- generator: rails g scaffold location name:string description:string duration:time gps_coords:string gps_file:string user:references
 	- models: 
 		- user.rb: `has_many :locations`
